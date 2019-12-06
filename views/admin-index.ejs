@@ -1,0 +1,9 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Admin frontpage</h2>
+    <span style="color: red"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+    <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+</div>
+<% include partials/after-footer %>

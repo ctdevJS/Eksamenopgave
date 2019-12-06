@@ -1,0 +1,32 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Bolig</h2>
+    <span style="color: red"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+    <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+
+    <table>
+            <thead>
+                <tr>
+                    <th>Handling</th>
+                    <th>Navn</th>
+                </tr>
+            </thead>
+            <div class="opret-btn">
+                <a href="/admin/bolig/opret">Opret bolig</a>
+            </div>
+            <tbody>
+                <% results.forEach(result => { %>
+                    <tr>
+                        <td>
+                            <a href="/admin/bolig/slet/<%= result.id %>">Slet</a>
+                            <a href="/admin/bolig/rediger/<%= result.id %>">Rediger</a>
+                        </td>
+                        <td><%= result.titel %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+</div>
+<% include partials/after-footer %>

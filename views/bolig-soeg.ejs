@@ -1,0 +1,30 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<div id="wrapper">
+    <div class="wrap1">
+        <div class="bolig-wrap">
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ab laboriosam aut? Maiores assumenda aperiam perferendis ipsa dicta dolorum temporibus veniam. Nostrum id error earum adipisci distinctio quae porro ut.</p>
+            </section>
+            <section>
+                <form action="/soeg" method="get">
+                    <fieldset>
+                        <label for="sagsnummer">Sagsnummer</label>
+                        <input type="text" name="sagsnummer" id="sagsnummer">
+                    </fieldset>
+
+                    <input class="btn-søg" type="submit">
+
+                </form>
+            </section>
+        </div>
+
+    </div>
+    <div class="wrap2">
+        <% include partials/aside %>
+    </div>
+</div>
+
+
+<% include partials/after-footer %>

@@ -1,0 +1,94 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<div id="wrapper">
+    <div class="wrap1">
+        <div class="kontakt-wrap">
+        <article>
+            <h3>Kontaktoplysninger</h3>
+            <p>Boligstjernen A/S</p>
+            <p>Park Allé 335</p>
+            <p>2100 København Ø</p>
+            <br>
+            <p>Telefon: 67912801</p>
+            <p>Fax: 67912811</p>
+            <p>Email.: info@boligstjernen.dk</p>
+
+        <div class="aabningstider">
+            <h3>Åbningstider</h3>
+
+            <div class="tider">
+            <p>Mandag</p>
+            <p>Lukket</p>
+            </div>
+
+            <div class="tider">
+            <p>Tirsdag</p>
+            <p>9.30 – 17.30</p>
+            </div>
+
+            <div class="tider">
+            <p>Onsdag:</p>
+            <p>9.30 – 17.30</p>
+            </div>
+
+            <div class="tider">
+            <p>Torsdag:</p>
+            <p>9.30 – 17.30</p>
+            </div>
+
+            <div class="tider">
+            <p>Fredag:</p>
+            <p>9.30 – 17.30</p>
+            </div>
+
+            <div class="tider">
+            <p>Lørdag:</p>
+            <p>9.30 – 13.00</p>
+            </div>
+
+            <div class="tider">
+            <p>Søndag:</p>
+            <p>10.00 – 15.00</p>
+            </div>
+
+        </div>
+        </article>
+
+        <div class="kontakt">
+            <form action="/kontakt" method="post" id="send-form" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-kontakt">
+                    <label></label>
+                    <input type="text" name="navn" id="navn" placeholder="Navn">
+                </div>
+                <div class="form-kontakt">
+                    <label></label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-kontakt">
+                    <label></label>
+                    <input type="text" name="tlf" id="tlf" placeholder="Telefon">
+                </div>
+                <div class="form-kontakt">
+                    <label></label>
+                    <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                </div>
+                <div class="form-kontakt">
+                    <label></label>
+                    <textarea name="besked" id="besked" cols="30" rows="10" placeholder="Besked"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Send">
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <div class="wrap2">
+        <% include partials/aside %>
+    </div>
+</div>
+
+
+<% include partials/after-footer %>

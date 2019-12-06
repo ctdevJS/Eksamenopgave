@@ -1,0 +1,61 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Rediger bolig</h2>
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-bolig">
+                    <label>sagsnummer</label>
+                    <input type="text" name="sagsnummer" value="<%= result.sagsnummer %>">
+                </div>
+
+                <div class="form-bolig">
+                        <label>bolig type</label>
+                        <select name="bolig_type" id="">
+                                <% boligKategorier.forEach( boligKategori => { %>
+                            <option value="<%= boligKategori.kategorier %>"><%= boligKategori.kategorier %></option>
+                            <% }); %>
+                        </select>
+                    </div>
+
+                <div class="form-bolig">
+                    <label>boligstørrelse</label>
+                    <input type="text" name="boligstørrelse" value="<%= result.boligstørrelse %>">
+                </div>
+                <div class="form-bolig">
+                    <label>grundareal</label>
+                    <input type="text" name="grundareal" value="<%= result.grundareal %>">
+                </div>
+                <div class="form-bolig">
+                    <label>pris</label>
+                    <input type="text" name="pris" value="<%= result.pris %>">
+                </div>
+                <div class="form-bolig">
+                    <label>brutto</label>
+                    <input type="text" name="brutto" value="<%= result.brutto %>">
+                </div>
+                <div class="form-bolig">
+                    <label>netto</label>
+                    <input type="text" name="netto" value="<%= result.netto %>">
+                </div>
+                <div class="form-bolig">
+                    <label>titel</label>
+                    <input type="text" name="titel" value="<%= result.titel %>">
+                </div>
+                <div class="form-bolig">
+                    <!-- <input type="text" name="beskrivelse" value="<%= result.beskrivelse %>"> -->
+                    <textarea name="beskrivelse" id="area" onclick="valueText()" cols="30" rows="10" placeholder="Beskrivelse"></textarea>
+                </div>
+                
+                <button type="submit">Gem</button>
+            </form>
+    </div>
+</div>
+<script>
+function valueText() {
+    document.getElementById('area').value = value="<%= result.beskrivelse %>";
+}
+</script>
+<% include partials/after-footer %>

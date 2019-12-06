@@ -1,0 +1,25 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Opret nyhed</h2>
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-nyhed">
+                    <label>Titel</label>
+                    <input type="text" name="titel" >
+                </div>
+                <div class="form-nyhed">
+                    <label>Dato</label>
+                    <input type="date" name="dato" >
+                </div>
+                <div class="form-nyhed">
+                    <textarea name="tekst" cols="30" rows="10" placeholder="Nyheds tekst"></textarea>
+                </div>
+        
+                <button type="submit">Gem</button>
+        </form>
+    </div>
+</div>
+<% include partials/after-footer %>

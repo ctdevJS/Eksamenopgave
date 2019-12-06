@@ -1,0 +1,25 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Admin login</h2>
+    <span style="color: red"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+    <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-kontakt">
+                    <label>Modtager email</label>
+                    <input type="text" name="admin_brugernavn" required>
+                </div>
+                <div class="form-kontakt">
+                    <label>Sender email</label>
+                    <input type="password" name="admin_adgangskode" required>
+                </div>
+        
+                <button type="submit">Gem</button>
+        </form>
+    </div>
+</div>
+<% include partials/after-footer %>

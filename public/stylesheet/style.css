@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* =======================admin============================= */
+#admin-partials {
+    background-color: #7b2727;
+    position: absolute;
+    width: 20em;
+    height: 100%;
+    color: #ffffff;
+}
+#admin-partials h1 {
+    text-align: center;
+    font-weight: 200;
+}
+#admin-partials a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6em;
+    margin: 1em 0 0 0;
+    padding-left: 1em;
+}
+#admin-partials a:hover {
+    color: darkgray;
+}
+#admin-partials :last-child {
+    border-bottom: 2px solid black;
+    padding-bottom: .5em;
+}
+
+#admin-stylebox {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    background-color: beige;
+    width: 35em;
+}
+#admin-stylebox h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1em;
+}
+#admin-stylebox a {
+    font-size: 1.4em;
+}
+#admin-stylebox .opret-btn {
+    text-align: center;
+    
+}
+
+#admin-stylebox table {
+    margin-left: auto;
+    margin-right: auto;
+}
+#admin-stylebox td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+/* =======================admin forms============================= */
+.form {
+    display: flex;
+    justify-content: center;
+}
+.form label {
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+}
+.form input {
+    display: flex;
+    align-items: center;
+}
+.form textarea {
+    margin-top: 1em;
+    height: 5em;
+    width: 11.6em;
+}
+.form button {
+    margin: 1em;
+}
+
+/* =======================wrappers============================= */
+.wrap1, .wrap2, .wrap3 {
+    position: absolute;
+}
+.wrap1 {
+    left: 0;
+    width: 100%;
+}
+.wrap2 {
+    right: 0;
+    width: 20%;
+    margin: 2em;
+}
+.wrap3 {
+    right: 0;
+    width: 20%;
+}
+.wrap1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =======================aside-forside============================= */
+.aside-forside {
+    background-color: white;
+    opacity: .8;
+    height: 50em;
+    width: 100%;
+}
+.aside-forside img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2em;
+}
+.aside-forside section {
+    padding: 0 1.7em;
+}
+.aside-forside section:last-child {
+    padding-top: 1em;
+}
+.aside-forside h3 {
+    padding: 0 1.7em;
+}
+.aside-forside p {
+    margin: 0;
+}
+.aside-forside section div {
+    display: flex;
+    justify-content: space-between;
+}
+/* =======================aside============================= */
+.aside {
+    height: 40em;
+    width: 100%;
+}
+.aside img {
+    display: block;
+    width: 80%;
+    height: auto;
+    padding-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.aside section div {
+    display: flex;
+    justify-content: space-between;
+}
+.aside section {
+    padding: 0 1.7em;
+}
+.aside section:last-child {
+    padding-top: 1em;
+}
+.aside h3 {
+    padding: 0 1.7em;
+}
+.aside p {
+    margin: 0;
+}
+
+/* =======================logo-banner============================= */
+.logo-banner {
+    background-color: #430c0c;
+    height: 5em;
+}
+.logo-banner p {
+    position: absolute;
+    display: inline;
+    color: white;
+    margin: .3em 0 0 .5em;
+    font-size: 3em;
+}
+.svg {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    margin-left: 4.5em;
+}
+
+/* =======================nav============================= */
+nav {
+    height: 3em;
+    background-color: #7b2727;
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    margin: 0 2em;
+}
+nav ul, li {
+    list-style: none;
+    display: flex;
+}
+nav ul li.active a {
+    background-color: #ffffff;
+    color: #7b2727;
+}
+nav a:first-child {
+    margin-left: 5em; 
+}
+
+/* =======================nyheder============================= */
+.nyheder-wrap {
+    margin: 2em;
+}
+.nyheder-wrap section {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.nyheder-wrap div p {
+    margin: 0;
+}
+.nyheder-wrap h2 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+.nyheder-wrap h4 {
+    margin-bottom: 0;
+}
+.nyheder-wrap div {
+    width: 50%;
+    margin-bottom: 2em;
+}
+/* =======================kontakt============================= */
+.kontakt-wrap {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;;
+}
+.kontakt-wrap article p {
+    margin: 0;
+}
+.kontakt-wrap article {
+    width: 30%;
+}
+.form-kontakt input, textarea {
+    width: 20em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+.kontakt textarea {
+    height: 8em;
+}
+.aabningstider .tider  {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    float: right;
+    color: #ffffff;
+    border: #7b2727;
+    background-color: #7b2727;
+    width: 5em;
+    height: 1.8em;
+}
+/* =======================find bolig============================= */
+.bolig-wrap {
+    margin: 2em;
+    width: 60%;
+}
+.bolig-wrap section form fieldset {
+    border: none;
+}
+.results-sec .results-wrap {
+    display: flex;
+}
+.results-sec .results-wrap .results {
+    margin: 1em;
+}
+.results-sec .results-wrap .results h3 {
+    margin: 0;
+}
+.results-sec .results img {
+    width: 10em;
+    height: auto;
+}
+.btn-søg {
+    color: #ffffff;
+    border: #7b2727;
+    background-color: #7b2727;
+    width: 5em;
+    height: 1.8em;
+}
+/* =======================enkelside============================= */
+.enkel-wrap {
+    margin: 2em;
+    width: 70%;
+}
+.enkelside-sec .enkelside-wrap {
+    display: flex;
+}
+.enkelside-sec .enkelside-wrap .enkelside {
+    margin: 1em;
+}
+.enkelside-sec .enkelside-wrap .enkelside h3 {
+    margin: 0;
+}
+.enkelside-sec .enkelside img {
+    width: 20em;
+    height: auto;
+}
+
+/* =======================forside============================= */
+.forside-soeg {
+    top: 4em;
+    left: 20em;
+    position: absolute;
+    z-index: 10;
+}
+.forside-soeg h2 {
+    position: relative;
+    left: 2em;
+}
+.forside-soeg form fieldset input {
+    font-size: 1.2em;
+    width: 24em;
+    height: 2em;
+    border: 1px solid black;
+    opacity: .5;
+}
+.forside-soeg form fieldset {
+    border: none;
+    margin: 0;
+}
+.forside-soeg form button {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  
+    nav a:first-child {
+        margin-left: 1em;
+    }
+    .form-kontakt {
+        margin-left: 3em;
+    }
+    .wrap2 {
+        margin: 0;
+        width: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .kontakt-wrap article {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+     
+      .wrap2 {
+        width: 50%;
+        top: 32em;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kontakt-wrap article {
+        width: 50%;
+        margin-left: 10%;
+    }
+   
+  }
+
+  @media only screen and (max-width: 550px) {
+     
+      
+      .kontakt {
+        position: relative;
+        right: 50%;
+      }
+      .wrap2 {
+        width: 50%;
+        top: 60em;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      .kontakt-wrap article {
+        position: relative;
+        left: 40%;
+        top: 22em;
+        
+    }
+  }
+

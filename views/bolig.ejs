@@ -1,0 +1,29 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<div id="wrapper">
+    <div class="wrap1">
+        <div class="enkel-wrap">
+                <section class="enkelside-sec">
+                       
+                            <div class="enkelside-wrap">
+                            <div class="enkelside">
+                            <img src="/billeder/<%= result.billede %>" alt="">
+                        </div>
+                        <div class="enkelside">
+                            <h3><%= result.titel %></h3>
+                            <p><%= result.beskrivelse %></p>
+                        </div>
+                    </div>
+                       
+                    </section>
+        </div>
+
+    </div>
+    <div class="wrap2">
+        <% include partials/aside %>
+    </div>
+</div>
+
+
+<% include partials/after-footer %>

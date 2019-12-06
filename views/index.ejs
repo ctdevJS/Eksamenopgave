@@ -1,0 +1,54 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<div id="wrapper">
+    <div class="wrap1">
+        <img src="./billeder/forside.png" alt="">
+
+        <div class="forside-soeg">
+            <h2>Find din nye bolig</h2>
+        <form action="/soeg/forside" method="get">
+            <fieldset>
+                <input type="text" name="soeg" id="søg">
+            </fieldset>
+            
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    </div>
+    <div class="wrap3">
+        <div class="aside-forside">
+                <img src="/billeder/<%= randProduct.billede %>" alt="">
+                <h3><%= randProduct.titel %></h3>
+                <section>
+                    <div>
+                        <p>Grund m2</p>
+                        <p><%= randProduct.grundareal %></p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>Pris DKK</p>
+                        <p><%= randProduct.pris %></p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>Bolig m2</p>
+                        <p><%= randProduct.boligstørrelse %></p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>Sagsnummer</p>
+                        <p><%= randProduct.sagsnummer %></p>
+                    </div>
+                </section>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/after-footer %>
+

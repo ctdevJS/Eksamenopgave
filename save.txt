@@ -1,0 +1,17 @@
+                    <!-- <fieldset>
+                        <legend>Bolig type</legend>
+                        <% boligKategorier.forEach( boligKategori => { %>
+                        <div>
+                            <input type="checkbox" name="<%= boligKategori.kategorier %>" id="">
+                            <label for=""><%= boligKategori.kategorier %></label>
+                        </div>
+                        <% }); %>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>pris</legend>
+                        <label for="min-pris">Min</label>
+                        <input type="number" name="min-pris" id="min-pris">
+                        <label for="max-pris">Max</label>
+                        <input type="number" name="max-pris" id="max-pris">
+                    </fieldset> -->

@@ -1,0 +1,23 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Kontakt email</h2>
+
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-kontakt">
+                    <label>Modtager email</label>
+                    <input type="text" name="modtager_email" value="<%= adminEmails.modtager_email %>">
+                </div>
+                <div class="form-kontakt">
+                    <label>Sender email</label>
+                    <input type="text" name="sender_email" value="<%= adminEmails.sender_email %>">
+                </div>
+        
+                <button type="submit">Gem</button>
+        </form>
+    </div>
+</div>
+<% include partials/after-footer %>

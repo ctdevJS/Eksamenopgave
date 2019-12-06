@@ -1,0 +1,55 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Opret bolig</h2>
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-bolig">
+                    <label>sagsnummer</label>
+                    <input type="text" name="sagsnummer" >
+                </div>
+
+                <div class="form-bolig">
+                    <label>bolig type</label>
+                    <select name="bolig_type" id="">
+                            <% boligKategorier.forEach( boligKategori => { %>
+                        <option value="<%= boligKategori.kategorier %>"><%= boligKategori.kategorier %></option>
+                        <% }); %>
+                    </select>
+                </div>
+
+                <div class="form-bolig">
+                    <label>boligstørrelse</label>
+                    <input type="text" name="boligstørrelse" value="">
+                </div>
+                <div class="form-bolig">
+                    <label>grundareal</label>
+                    <input type="text" name="grundareal" value="">
+                </div>
+                <div class="form-bolig">
+                    <label>pris</label>
+                    <input type="text" name="pris" value="">
+                </div>
+                <div class="form-bolig">
+                    <label>brutto</label>
+                    <input type="text" name="brutto" value="">
+                </div>
+                <div class="form-bolig">
+                    <label>netto</label>
+                    <input type="text" name="netto" value="">
+                </div>
+                <div class="form-bolig">
+                    <label>titel</label>
+                    <input type="text" name="titel" value="">
+                </div>
+                <div class="form-bolig">
+                    <textarea name="beskrivelse" cols="30" rows="10" placeholder="Beskrivelse"></textarea>
+                </div>
+        
+                <button type="submit">Gem</button>
+        </form>
+    </div>
+</div>
+<% include partials/after-footer %>

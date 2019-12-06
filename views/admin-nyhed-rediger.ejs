@@ -1,0 +1,30 @@
+<% include partials/head %>
+<% include partials/admin-partials %>
+
+<div id="admin-stylebox">
+    <h2>Rediger nyhed</h2>
+    <div class="form">
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-nyhed">
+                    <label>Titel</label>
+                    <input type="text" name="titel" value="<%= result.titel %>">
+                </div>
+                <div class="form-nyhed">
+                    <label>Dato</label>
+                    <input type="date" name="dato" value="<%= result.dato %>">
+                </div>
+                <div class="form-nyhed">
+                    <textarea name="tekst" id="area" onclick="valueText()" cols="30" rows="10" placeholder="Tekst"></textarea>
+                </div>
+        
+                <button type="submit">Gem</button>
+        </form>
+    </div>
+</div>
+<script>
+    function valueText() {
+        document.getElementById('area').value = value="<%= result.tekst %>";
+    }
+</script>
+<% include partials/after-footer %>

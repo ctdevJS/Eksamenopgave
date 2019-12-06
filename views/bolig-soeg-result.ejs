@@ -1,0 +1,45 @@
+<% include partials/head %>
+<% include partials/header %>
+
+<div id="wrapper">
+    <div class="wrap1">
+        <div class="bolig-wrap">
+            <section>
+                <p>Her kan du søge i vores boligoversigt. Du kan vælge at søge direkte på et sagsnummer, eller vælge at udfylde dine søgekriterier i formularen - måske har vi netop nu din drømmebolig til salg.</p>
+            </section>
+            <section>
+                <span style="color: red"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+                <span style="color: green"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></span>
+                <form action="/soeg" method="get">
+                    <fieldset>
+                        <label for="sagsnummer">Sagsnummer</label>
+                        <input type="text" name="sagsnummer" id="sagsnummer">
+                    </fieldset>
+                    <input type="submit">
+                </form>
+            </section>
+
+            <section class="results-sec">
+                <% results.forEach( result => { %>
+                    <div class="results-wrap">
+                    <div class="results">
+                    <img src="/billeder/<%= result.billede %>" alt="">
+                </div>
+                <div class="results">
+                    <h3><%= result.titel %></h3>
+                    <p><%= result.beskrivelse %></p>
+                    <a href="/bolig/<%= result.id %>">Læs mere</a>
+                </div>
+            </div>
+                <% }); %>
+            </section>
+        </div>
+
+    </div>
+    <div class="wrap2">
+        <% include partials/aside %>
+    </div>
+</div>
+
+
+<% include partials/after-footer %>
